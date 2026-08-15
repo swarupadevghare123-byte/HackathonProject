@@ -303,6 +303,7 @@
             </RelativeLayout>
 
             <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardViewCamp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
@@ -317,18 +318,14 @@
                     android:orientation="horizontal"
                     android:padding="16dp">
 
-
                     <com.airbnb.lottie.LottieAnimationView
                         android:id="@+id/lvdocter"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:layout_gravity="end"
-
                         app:lottie_autoPlay="false"
                         app:lottie_loop="false"
                         app:lottie_rawRes="@raw/registro" />
-
-
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -410,7 +407,9 @@
                 android:columnCount="2"
                 android:rowCount="2">
 
+                <!-- Lab Tests Card (ID Added Here) -->
                 <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardLabTests"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_rowWeight="1"
