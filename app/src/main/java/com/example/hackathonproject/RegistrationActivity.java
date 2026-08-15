@@ -25,7 +25,9 @@ public class RegistrationActivity extends AppCompatActivity {
 
     private EditText etRegistrationName, etRegistrationMob, etRegistrationEmail, etRegistrationUsername, etRegistrationPassword, etRegistrationconpass;
     private LottieAnimationView lvThanks, ivLogoAnim;
+    private MovingGradientButton btnRegistrationForm;
     private TextView tvLoginLink;
+    private ImageButton btnBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,11 +41,11 @@ public class RegistrationActivity extends AppCompatActivity {
         etRegistrationUsername = findViewById(R.id.etRegistrationUsername);
         etRegistrationPassword = findViewById(R.id.etRegistrationPassword);
         etRegistrationconpass = findViewById(R.id.etRegistrationconpass);
-        MovingGradientButton btnRegistrationForm = findViewById(R.id.btnLogin);
+        btnRegistrationForm = findViewById(R.id.btnLogin);
         lvThanks = findViewById(R.id.lvThanks);
         ivLogoAnim = findViewById(R.id.ivLogo);
         tvLoginLink = findViewById(R.id.tvLoginLink);
-        ImageButton btnBack = findViewById(R.id.btnBack);
+        btnBack = findViewById(R.id.btnBack);
 
         // Apply entrance animation
         LinearLayout llContainer = findViewById(R.id.llContainer);
@@ -121,12 +123,14 @@ public class RegistrationActivity extends AppCompatActivity {
         } else if (!java.util.Objects.equals(pass, conPass)) {
             etRegistrationconpass.setError("Please Enter correct Password");
         } else {
-
+            // Start Success Animation
             if (ivLogoAnim != null) ivLogoAnim.setVisibility(View.GONE);
             if (lvThanks != null) {
                 lvThanks.setVisibility(VISIBLE);
                 lvThanks.playAnimation();
             }
+
+            // Perform Intent to Home (HomeActivity) after animation
             new Handler().postDelayed(() -> {
                 startActivity(new Intent(RegistrationActivity.this, HomeActivity.class));
                 finish();

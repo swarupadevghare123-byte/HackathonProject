@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    android:orientation="vertical"
     tools:context=".RegistrationActivity">
 
     <ScrollView
@@ -81,10 +80,10 @@
                         android:layout_marginTop="16dp"
                         android:background="@drawable/edittext_bg"
                         android:hint="@string/full_name"
+                        android:textColor="@color/black"
                         android:importantForAutofill="no"
                         android:inputType="textPersonName"
-                        android:padding="16dp"
-                        android:textColor="@color/black" />
+                        android:padding="16dp" />
 
                     <EditText
                         android:id="@+id/etRegistrationMob"
@@ -93,10 +92,11 @@
                         android:layout_marginTop="12dp"
                         android:background="@drawable/edittext_bg"
                         android:hint="@string/phone_number"
+                        android:textColor="@color/black"
+
                         android:importantForAutofill="no"
                         android:inputType="phone"
-                        android:padding="16dp"
-                        android:textColor="@color/black" />
+                        android:padding="16dp" />
 
                     <EditText
                         android:id="@+id/etRegistrationEmail"
@@ -105,10 +105,11 @@
                         android:layout_marginTop="12dp"
                         android:background="@drawable/edittext_bg"
                         android:hint="@string/email_address"
+                        android:textColor="@color/black"
+
                         android:importantForAutofill="no"
                         android:inputType="textEmailAddress"
-                        android:padding="16dp"
-                        android:textColor="@color/black" />
+                        android:padding="16dp" />
 
                     <EditText
                         android:id="@+id/etRegistrationUsername"
@@ -117,10 +118,11 @@
                         android:layout_marginTop="12dp"
                         android:background="@drawable/edittext_bg"
                         android:hint="@string/username"
+                        android:textColor="@color/black"
+
                         android:importantForAutofill="no"
                         android:inputType="text"
-                        android:padding="16dp"
-                        android:textColor="@color/black" />
+                        android:padding="16dp" />
 
                     <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
@@ -136,10 +138,11 @@
                             android:layout_height="wrap_content"
                             android:background="@drawable/edittext_bg"
                             android:hint="@string/password"
+                            android:textColor="@color/black"
+
                             android:importantForAutofill="no"
                             android:inputType="textPassword"
-                            android:padding="16dp"
-                            android:textColor="@color/black" />
+                            android:padding="16dp" />
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
@@ -156,10 +159,11 @@
                             android:layout_height="wrap_content"
                             android:background="@drawable/edittext_bg"
                             android:hint="@string/confirm_password"
+                            android:textColor="@color/black"
+
                             android:importantForAutofill="no"
                             android:inputType="textPassword"
-                            android:padding="16dp"
-                            android:textColor="@color/black" />
+                            android:padding="16dp" />
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <com.example.hackathonproject.MovingGradientButton
@@ -201,4 +205,5 @@
 
         </LinearLayout>
     </ScrollView>
-</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

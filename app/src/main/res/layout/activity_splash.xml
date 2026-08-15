@@ -15,6 +15,10 @@
     android:paddingEnd="20dp">
 
 
+    <!-- ============================= -->
+    <!-- LOGO AREA -->
+    <!-- ============================= -->
+
     <FrameLayout
 
         android:id="@+id/logoContainer"
@@ -188,6 +192,11 @@
             android:background="#55C7D2" />
 
     </LinearLayout>
+
+
+    <!-- ============================= -->
+    <!-- TAGLINE -->
+    <!-- ============================= -->
 
     <TextView
 
