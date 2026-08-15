@@ -1,19 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
         android:allowBackup="true"
-        android:dataExtractionRules="@xml/data_extraction_rules"
-        android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/health"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/health"
         android:supportsRtl="true"
-        android:theme="@style/Theme.HackathonProject"
-        tools:targetApi="31">
+        android:theme="@style/Theme.HackathonProject">
 
-        <!-- Splash Activity (App suru hotana disnari first screen) -->
         <activity
             android:name=".SplashActivity"
             android:exported="true">
@@ -23,22 +18,22 @@
             </intent-filter>
         </activity>
 
-        <!-- Login Activity -->
         <activity
             android:name=".LoginActivity"
             android:exported="false" />
 
-        <!-- Registration Activity -->
         <activity
             android:name=".RegistrationActivity"
             android:exported="false" />
-        <activity android:name=".LabTestsActivity" android:exported="false" />
-        <!-- Home Activity -->
+
+        <activity
+            android:name=".LabTestsActivity"
+            android:exported="false" />
+
         <activity
             android:name=".HomeActivity"
             android:exported="false" />
 
-        <!-- Camp Details Activity (Aata hi ithe barobar declare keli ahe) -->
         <activity
             android:name=".CampDetailsActivity"
             android:exported="false" />
@@ -75,9 +70,8 @@
         <activity
             android:name=".ForgotPasswordActivity"
             android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="false" />
+
+
 
     </application>
 

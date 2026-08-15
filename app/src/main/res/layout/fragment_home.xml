@@ -158,12 +158,9 @@
                 android:weightSum="4">
 
                 <LinearLayout
-                    android:id="@+id/categoryCamps"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:clickable="true"
-                    android:focusable="true"
                     android:gravity="center"
                     android:orientation="vertical">
 
@@ -191,12 +188,9 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/categoryServices"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:clickable="true"
-                    android:focusable="true"
                     android:gravity="center"
                     android:orientation="vertical">
 
@@ -223,12 +217,9 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/categoryNearMe"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:clickable="true"
-                    android:focusable="true"
                     android:gravity="center"
                     android:orientation="vertical">
 
@@ -255,12 +246,9 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/categoryEmergency"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:clickable="true"
-                    android:focusable="true"
                     android:gravity="center"
                     android:orientation="vertical">
 
@@ -318,6 +306,7 @@
             </RelativeLayout>
 
             <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardViewCamp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
@@ -432,8 +421,6 @@
                     android:layout_rowWeight="1"
                     android:layout_columnWeight="1"
                     android:layout_margin="8dp"
-                    android:clickable="true"
-                    android:focusable="true"
                     app:cardBackgroundColor="@color/surface_card"
                     app:cardCornerRadius="20dp"
                     app:cardElevation="3dp">
@@ -470,8 +457,6 @@
                     android:layout_rowWeight="1"
                     android:layout_columnWeight="1"
                     android:layout_margin="8dp"
-                    android:clickable="true"
-                    android:focusable="true"
                     app:cardBackgroundColor="@color/surface_card"
                     app:cardCornerRadius="20dp"
                     app:cardElevation="3dp">
@@ -508,8 +493,6 @@
                     android:layout_rowWeight="1"
                     android:layout_columnWeight="1"
                     android:layout_margin="8dp"
-                    android:clickable="true"
-                    android:focusable="true"
                     app:cardBackgroundColor="@color/surface_card"
                     app:cardCornerRadius="20dp"
                     app:cardElevation="3dp">
@@ -546,8 +529,6 @@
                     android:layout_rowWeight="1"
                     android:layout_columnWeight="1"
                     android:layout_margin="8dp"
-                    android:clickable="true"
-                    android:focusable="true"
                     app:cardBackgroundColor="@color/surface_card"
                     app:cardCornerRadius="20dp"
                     app:cardElevation="3dp">

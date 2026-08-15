@@ -4,11 +4,7 @@ plugins {
 
 android {
     namespace = "com.example.hackathonproject"
-    compileSdk {
-        version = release(36) {
-            minorApiLevel = 1
-        }
-    }
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.example.hackathonproject"
@@ -42,7 +38,4 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.espresso.core)
     androidTestImplementation(libs.ext.junit)
-    dependencies {
-        implementation("com.airbnb.android:lottie:6.6.2")
-    }
 }
