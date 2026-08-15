@@ -112,6 +112,20 @@
                         android:padding="16dp" />
 
                     <EditText
+                        android:id="@+id/etRegistrationBranch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/edittext_bg"
+                        android:hint="@string/branch"
+                        android:importantForAutofill="no"
+
+                        android:inputType="text"
+                        android:textColor="@color/black"
+                        android:padding="16dp" />
+
+
+                    <EditText
                         android:id="@+id/etRegistrationUsername"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -166,8 +180,15 @@
                             android:padding="16dp" />
                     </com.google.android.material.textfield.TextInputLayout>
 
+                    <CheckBox
+                        android:id="@+id/cbPass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Show Password"
+                        android:textColor="@color/black" />
+
                     <com.example.hackathonproject.MovingGradientButton
-                        android:id="@+id/btnLogin"
+                        android:id="@+id/btnregistrationform"
                         android:layout_width="match_parent"
                         android:layout_height="55dp"
                         android:layout_marginTop="20dp"
@@ -181,17 +202,18 @@
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
-            <TextView
-                android:id="@+id/tvLoginLink"
+            <Button
+                android:id="@+id/btnGoToLogin"
+                style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="20dp"
-                android:layout_marginBottom="24dp"
                 android:text="@string/already_have_account"
+                android:textAllCaps="false"
                 android:textColor="@color/black"
-                android:textSize="15sp"
-                android:textStyle="bold" />
+                android:textSize="15sp" />
+
 
             <com.airbnb.lottie.LottieAnimationView
                 android:id="@+id/lvThanks"

@@ -14,6 +14,7 @@
     <string name="back">Back</string>
     <string name="logo_desc">HealthCheck Logo</string>
     <string name="username">Username</string>
+    <string name="branch">Branch</string>
     <string name="home">Home</string>
     <string name="camps">Camps</string>
     <string name="services">Services</string>

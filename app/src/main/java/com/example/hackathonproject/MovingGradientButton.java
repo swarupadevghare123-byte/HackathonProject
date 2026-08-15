@@ -78,6 +78,10 @@ public class MovingGradientButton extends AppCompatButton {
         if (gradient != null) {
             matrix.setTranslate(-translate, 0);
             gradient.setLocalMatrix(matrix);
+            // Draw the moving gradient background
+            // Assuming rounded corners based on project style (e.g. 12dp)
+            float radius = 12 * getResources().getDisplayMetrics().density;
+            canvas.drawRoundRect(0, 0, getWidth(), getHeight(), radius, radius, paint);
         }
         super.onDraw(canvas);
     }
