@@ -1,3 +1,17 @@
 <resources>
-    <string name="app_name">HackathonProject</string>
+    <string name="app_name">Health Connect</string>
+    <string name="tagline">Your Health, Our Priority</string>
+    <string name="create_account">Create Account</string>
+    <string name="join_us">Join us to manage your health</string>
+    <string name="full_name">Full Name</string>
+    <string name="email_address">Email Address</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="terms_and_conditions">I agree to the Terms &amp; Conditions and Privacy Policy</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="already_have_account">Already have an account? Login</string>
+    <string name="back">Back</string>
+    <string name="logo_desc">HealthCheck Logo</string>
+    <string name="username">Username</string>
 </resources>
