@@ -15,10 +15,6 @@
     android:paddingEnd="20dp">
 
 
-    <!-- ============================= -->
-    <!-- LOGO AREA -->
-    <!-- ============================= -->
-
     <FrameLayout
 
         android:id="@+id/logoContainer"
@@ -28,8 +24,6 @@
 
         android:layout_gravity="center">
 
-
-        <!-- OUTER ROTATING RING -->
 
         <ImageView
 
@@ -46,8 +40,6 @@
 
             android:contentDescription="@null" />
 
-
-        <!-- INNER ROTATING RING -->
 
         <ImageView
 
@@ -84,10 +76,6 @@
 
     </FrameLayout>
 
-
-    <!-- ============================= -->
-    <!-- APP NAME -->
-    <!-- ============================= -->
 
     <TextView
 
@@ -139,9 +127,6 @@
         android:alpha="0" />
 
 
-    <!-- ============================= -->
-    <!-- DECORATION -->
-    <!-- ============================= -->
 
     <LinearLayout
 
@@ -193,10 +178,6 @@
 
     </LinearLayout>
 
-
-    <!-- ============================= -->
-    <!-- TAGLINE -->
-    <!-- ============================= -->
 
     <TextView
 

@@ -27,7 +27,6 @@ public class RegistrationActivity extends AppCompatActivity {
     private LottieAnimationView lvThanks, ivLogoAnim;
     private MovingGradientButton btnRegistrationForm;
     private TextView tvLoginLink;
-    private int i ;
     private ImageButton btnBack;
 
     @Override

@@ -8,7 +8,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.Manifest;
+
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
@@ -41,9 +41,12 @@ public class LoginActivity extends AppCompatActivity {
 
         TextView tvSignUp = findViewById(R.id.tvSignUp);
         if (tvSignUp != null) {
-            tvSignUp.setOnClickListener(v -> {
-                startActivity(new Intent(LoginActivity.this, RegistrationActivity.class));
-            });
+            tvSignUp.setOnClickListener(v -> startActivity(new Intent(LoginActivity.this, RegistrationActivity.class)));
+        }
+
+        TextView tvForgotPassword = findViewById(R.id.tvForgotPassword);
+        if (tvForgotPassword != null) {
+            tvForgotPassword.setOnClickListener(v -> startActivity(new Intent(LoginActivity.this, ForgotPasswordActivity.class)));
         }
 
         Button btnLogin = findViewById(R.id.btnLogin);
