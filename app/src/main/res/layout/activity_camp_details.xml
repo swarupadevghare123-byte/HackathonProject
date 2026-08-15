@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/surface_main"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- Top Heading -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Camp Details"
+        android:textColor="@color/text_main"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Sagle cards scroll karnyasathi ScrollView -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+            <include layout="@layout/item_health_camp" />
+            <include layout="@layout/item_health_camp_2" />
+            <include layout="@layout/item_health_camp_3" />
+            <include layout="@layout/item_health_camp_4" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
