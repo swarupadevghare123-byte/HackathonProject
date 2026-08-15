@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/surface_main"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Lab Tests"
+        android:textColor="@color/text_main"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+            <include layout="@layout/item_lab_test" />
+            <include layout="@layout/item_lab_test_2" />
+            <include layout="@layout/item_lab_test_3" />
+            <include layout="@layout/item_lab_test_4" />
+            <include layout="@layout/item_lab_test_5" />
+            <include layout="@layout/item_lab_test_6" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
