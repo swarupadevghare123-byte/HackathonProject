@@ -123,14 +123,13 @@ public class RegistrationActivity extends AppCompatActivity {
         } else if (!java.util.Objects.equals(pass, conPass)) {
             etRegistrationconpass.setError("Please Enter correct Password");
         } else {
-            // Start Success Animation
+
             if (ivLogoAnim != null) ivLogoAnim.setVisibility(View.GONE);
             if (lvThanks != null) {
                 lvThanks.setVisibility(VISIBLE);
                 lvThanks.playAnimation();
             }
 
-            // Perform Intent to Home (HomeActivity) after animation
             new Handler().postDelayed(() -> {
                 startActivity(new Intent(RegistrationActivity.this, HomeActivity.class));
                 finish();

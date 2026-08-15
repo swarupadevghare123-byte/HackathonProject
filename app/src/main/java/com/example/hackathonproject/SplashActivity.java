@@ -14,7 +14,6 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class SplashActivity extends AppCompatActivity {
-
     private ImageView outerRing;
     private ImageView innerRing;
     private ImageView logo;
@@ -190,30 +189,21 @@ public class SplashActivity extends AppCompatActivity {
 
                 .start();
 
-
-        // TAGLINE
-
         tagline.setAlpha(0f);
 
         tagline.setTranslationY(10f);
 
         tagline.animate()
-
                 .alpha(1f)
-
                 .translationY(0f)
-
                 .setStartDelay(1350)
-
                 .setDuration(600)
-
                 .setInterpolator(
                         new DecelerateInterpolator()
                 )
 
                 .start();
     }
-
 
     @Override
     protected void onDestroy() {

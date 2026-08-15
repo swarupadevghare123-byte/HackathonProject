@@ -32,7 +32,7 @@ public class ForgotPasswordActivity extends AppCompatActivity {
         Button btnResetPassword = findViewById(R.id.btnResetPassword);
         if (btnResetPassword != null) {
             btnResetPassword.setOnClickListener(v -> {
-                // Perform Reset Password Logic
+
                 Toast.makeText(this, "Password Reset Link Sent!", Toast.LENGTH_SHORT).show();
                 finish();
             });
