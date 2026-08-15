@@ -32,7 +32,7 @@ public class LoginActivity extends AppCompatActivity {
             });
         }
 
-        // Apply entrance animation
+
         LinearLayout mainLayout = findViewById(R.id.mainContentLayout);
         if (mainLayout != null) {
             Animation slideUp = AnimationUtils.loadAnimation(this, R.anim.slide_up);

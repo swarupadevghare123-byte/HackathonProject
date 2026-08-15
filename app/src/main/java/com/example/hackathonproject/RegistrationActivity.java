@@ -25,9 +25,6 @@ public class RegistrationActivity extends AppCompatActivity {
 
     private EditText etRegistrationName, etRegistrationMob, etRegistrationEmail, etRegistrationUsername, etRegistrationPassword, etRegistrationconpass;
     private LottieAnimationView lvThanks, ivLogoAnim;
-    private MovingGradientButton btnRegistrationForm;
-    private TextView tvLoginLink;
-    private ImageButton btnBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,11 +38,14 @@ public class RegistrationActivity extends AppCompatActivity {
         etRegistrationUsername = findViewById(R.id.etRegistrationUsername);
         etRegistrationPassword = findViewById(R.id.etRegistrationPassword);
         etRegistrationconpass = findViewById(R.id.etRegistrationconpass);
-        btnRegistrationForm = findViewById(R.id.btnLogin);
+        MovingGradientButton btnRegistrationForm = findViewById(R.id.btnLogin);
         lvThanks = findViewById(R.id.lvThanks);
         ivLogoAnim = findViewById(R.id.ivLogo);
-        tvLoginLink = findViewById(R.id.tvLoginLink);
-        btnBack = findViewById(R.id.btnBack);
+        if (ivLogoAnim != null) {
+            ivLogoAnim.playAnimation();
+        }
+        TextView tvLoginLink = findViewById(R.id.tvLoginLink);
+        ImageButton btnBack = findViewById(R.id.btnBack);
 
         // Apply entrance animation
         LinearLayout llContainer = findViewById(R.id.llContainer);

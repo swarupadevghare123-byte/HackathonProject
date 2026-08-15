@@ -61,11 +61,11 @@
                     android:layout_alignParentEnd="true"
                     android:background="?attr/selectableItemBackgroundBorderless"
                     android:contentDescription="@string/reminders"
-                    android:src="@android:drawable/ic_popup_reminder"
+                    android:src="@drawable/notification"
                     app:tint="@color/black" />
             </RelativeLayout>
 
-            <!-- Greeting Section -->
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -112,7 +112,7 @@
                     app:shapeAppearanceOverlay="@style/CircleImage" />
             </LinearLayout>
 
-            <!-- Search Bar -->
+
             <EditText
                 android:id="@+id/etSearch"
                 android:layout_width="match_parent"
@@ -129,7 +129,6 @@
                 android:textColor="@color/black"
                 android:textSize="14sp" />
 
-            <!-- Service Categories -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -145,10 +144,14 @@
                     android:gravity="center"
                     android:orientation="vertical">
 
-                    <View
+                    <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:background="@drawable/circle_bg_teal" />
+                        android:padding="12dp"
+                        android:background="@drawable/circle_bg_teal"
+                        android:contentDescription="@string/health_camps"
+                        android:src="@drawable/medical_service"
+                        app:tint="@color/white" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -167,10 +170,14 @@
                     android:gravity="center"
                     android:orientation="vertical">
 
-                    <View
+                    <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:background="@drawable/circle_bg_light" />
+                        android:padding="12dp"
+                        android:background="@drawable/circle_bg_light"
+                        android:contentDescription="@string/checkup_services"
+                        android:src="@drawable/checkup_service"
+                        app:tint="@color/teal_primary" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -189,10 +196,14 @@
                     android:gravity="center"
                     android:orientation="vertical">
 
-                    <View
+                    <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:background="@drawable/circle_bg_light" />
+                        android:padding="12dp"
+                        android:background="@drawable/circle_bg_light"
+                        android:contentDescription="@string/near_me"
+                        android:src="@drawable/location"
+                        app:tint="@color/teal_primary" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -211,10 +222,14 @@
                     android:gravity="center"
                     android:orientation="vertical">
 
-                    <View
+                    <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:background="@drawable/circle_bg_red" />
+                        android:padding="10dp"
+                        android:background="@drawable/circle_bg_red"
+                        android:contentDescription="@string/emergency"
+                        android:src="@drawable/emergency"
+                        app:tint="@color/white" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -227,7 +242,6 @@
                 </LinearLayout>
             </LinearLayout>
 
-            <!-- Upcoming Camp Section -->
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -332,7 +346,6 @@
                 </LinearLayout>
             </com.google.android.material.card.MaterialCardView>
 
-            <!-- Quick Access Section -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -370,7 +383,7 @@
                             android:layout_width="24dp"
                             android:layout_height="24dp"
                             android:contentDescription="@string/lab_tests"
-                            android:src="@android:drawable/ic_menu_agenda"
+                            android:src="@drawable/lab_test"
                             app:tint="@color/teal_primary" />
 
                         <TextView
@@ -404,7 +417,7 @@
                             android:layout_width="24dp"
                             android:layout_height="24dp"
                             android:contentDescription="@string/find_doctors"
-                            android:src="@android:drawable/ic_menu_myplaces"
+                            android:src="@drawable/find_docter"
                             app:tint="@color/teal_primary" />
 
                         <TextView
@@ -438,7 +451,7 @@
                             android:layout_width="24dp"
                             android:layout_height="24dp"
                             android:contentDescription="@string/reminders"
-                            android:src="@android:drawable/ic_popup_reminder"
+                            android:src="@drawable/notification"
                             app:tint="@color/teal_primary" />
 
                         <TextView
@@ -472,7 +485,7 @@
                             android:layout_width="24dp"
                             android:layout_height="24dp"
                             android:contentDescription="@string/health_tips"
-                            android:src="@android:drawable/ic_menu_help"
+                            android:src="@drawable/health_tips"
                             app:tint="@color/teal_primary" />
 
                         <TextView

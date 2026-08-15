@@ -37,7 +37,7 @@
                 android:layout_marginTop="8dp"
                 app:lottie_autoPlay="true"
                 app:lottie_loop="true"
-                app:lottie_rawRes="@raw/doctor" />
+                app:lottie_rawRes="@raw/doctor_anim" />
 
             <TextView
                 android:id="@+id/tvAppName"
@@ -201,7 +201,7 @@
                 android:visibility="gone"
                 app:lottie_autoPlay="false"
                 app:lottie_loop="false"
-                app:lottie_rawRes="@raw/doctor" />
+                app:lottie_rawRes="@raw/doctor_anim" />
 
         </LinearLayout>
     </ScrollView>
