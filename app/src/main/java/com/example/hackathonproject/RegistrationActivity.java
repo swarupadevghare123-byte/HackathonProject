@@ -35,7 +35,6 @@ public class RegistrationActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_registration);
 
-        // Initialize views
         etRegistrationName = findViewById(R.id.etRegistrationName);
         etRegistrationMob = findViewById(R.id.etRegistrationMob);
         etRegistrationEmail = findViewById(R.id.etRegistrationEmail);
@@ -55,11 +54,14 @@ public class RegistrationActivity extends AppCompatActivity {
             llContainer.startAnimation(fadeInUp);
         }
 
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+        View mainView = findViewById(R.id.main);
+        if (mainView != null) {
+            ViewCompat.setOnApplyWindowInsetsListener(mainView, (v, insets) -> {
+                Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+                v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+                return insets;
+            });
+        }
 
         if (btnRegistrationForm != null) {
             btnRegistrationForm.setOnClickListener(v -> performRegistration());
@@ -128,7 +130,7 @@ public class RegistrationActivity extends AppCompatActivity {
                 lvThanks.playAnimation();
             }
 
-            // Perform Intent to Home (MainActivity) after animation
+            // Perform Intent to Home (HomeActivity) after animation
             new Handler().postDelayed(() -> {
                 startActivity(new Intent(RegistrationActivity.this, HomeActivity.class));
                 finish();
