@@ -134,7 +134,7 @@ public class RegistrationActivity extends AppCompatActivity {
             new Handler().postDelayed(() -> {
                 startActivity(new Intent(RegistrationActivity.this, HomeActivity.class));
                 finish();
-            }, 2000);
+            }, 3000);
         }
     }
 }

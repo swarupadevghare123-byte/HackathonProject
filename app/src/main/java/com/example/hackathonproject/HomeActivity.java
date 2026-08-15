@@ -9,6 +9,9 @@ import androidx.core.view.GravityCompat;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.Fragment;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -28,6 +31,28 @@ public class HomeActivity extends AppCompatActivity {
                 v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
                 return insets;
             });
+        }
+
+        BottomNavigationView bottomNav = findViewById(R.id.bottom_navigation);
+        if (bottomNav != null) {
+            bottomNav.setOnItemSelectedListener(item -> {
+                Fragment selectedFragment = null;
+                int id = item.getItemId();
+
+                if (id == R.id.nav_home) {
+                    selectedFragment = new HomeFragment();
+                }
+
+                if (selectedFragment != null) {
+                    getSupportFragmentManager().beginTransaction()
+                            .replace(R.id.fragment_container, selectedFragment)
+                            .commit();
+                }
+                return true;
+            });
+
+            // Set default selection
+            bottomNav.setSelectedItemId(R.id.nav_home);
         }
     }
 
