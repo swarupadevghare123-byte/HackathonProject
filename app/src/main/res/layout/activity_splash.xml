@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:gravity="center"
+
+    android:background="@drawable/backkkk"
+
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp">
+
+
+    <!-- ============================= -->
+    <!-- LOGO AREA -->
+    <!-- ============================= -->
+
+    <FrameLayout
+
+        android:id="@+id/logoContainer"
+
+        android:layout_width="235dp"
+        android:layout_height="235dp"
+
+        android:layout_gravity="center">
+
+
+        <!-- OUTER ROTATING RING -->
+
+        <ImageView
+
+            android:id="@+id/outerRing"
+
+            android:layout_width="235dp"
+            android:layout_height="235dp"
+
+            android:layout_gravity="center"
+
+            android:src="@drawable/ring_outer"
+
+            android:scaleType="fitCenter"
+
+            android:contentDescription="@null" />
+
+
+        <!-- INNER ROTATING RING -->
+
+        <ImageView
+
+            android:id="@+id/innerRing"
+
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+
+            android:layout_gravity="center"
+
+            android:src="@drawable/ring_inner"
+
+            android:scaleType="fitCenter"
+
+            android:contentDescription="@null" />
+
+
+        <!-- STATIC LOGO -->
+
+        <ImageView
+
+            android:id="@+id/logo"
+
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+
+            android:layout_gravity="center"
+
+            android:src="@drawable/health"
+
+            android:scaleType="fitCenter"
+
+            android:contentDescription="HealthConnect Logo" />
+
+    </FrameLayout>
+
+
+    <!-- ============================= -->
+    <!-- APP NAME -->
+    <!-- ============================= -->
+
+    <TextView
+
+        android:id="@+id/appName"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="18dp"
+
+        android:text="HealthConnect"
+
+        android:textColor="#078BA8"
+
+        android:textSize="30sp"
+
+        android:textStyle="bold"
+
+        android:fontFamily="@font/poppins_bold"
+
+        android:gravity="center"
+
+        android:alpha="0" />
+
+
+    <!-- ============================= -->
+    <!-- SUBTITLE -->
+    <!-- ============================= -->
+
+    <TextView
+
+        android:id="@+id/subtitle"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="4dp"
+
+        android:text="Health Camp &amp; Checkup Locator"
+
+        android:textColor="#385B63"
+
+        android:textSize="13sp"
+
+        android:fontFamily="@font/poppins_medium"
+
+        android:gravity="center"
+
+        android:alpha="0" />
+
+
+    <!-- ============================= -->
+    <!-- DECORATION -->
+    <!-- ============================= -->
+
+    <LinearLayout
+
+        android:id="@+id/dividerLayout"
+
+        android:layout_width="180dp"
+        android:layout_height="28dp"
+
+        android:layout_marginTop="10dp"
+
+        android:gravity="center"
+
+        android:orientation="horizontal"
+
+        android:alpha="0">
+
+
+        <View
+
+            android:layout_width="60dp"
+            android:layout_height="1dp"
+
+            android:background="#55C7D2" />
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+
+            android:text="✦"
+
+            android:textColor="#159FB2"
+
+            android:textSize="12sp"
+
+            android:fontFamily="@font/poppins_medium" />
+
+
+        <View
+
+            android:layout_width="60dp"
+            android:layout_height="1dp"
+
+            android:background="#55C7D2" />
+
+    </LinearLayout>
+
+
+    <!-- ============================= -->
+    <!-- TAGLINE -->
+    <!-- ============================= -->
+
+    <TextView
+
+        android:id="@+id/tagline"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="1dp"
+
+        android:text="Stay Informed. Stay Healthy."
+
+        android:textColor="#45656C"
+
+        android:textSize="13sp"
+
+        android:fontFamily="@font/poppins"
+
+        android:letterSpacing="0.025"
+
+        android:gravity="center"
+
+        android:alpha="0" />
+
+</LinearLayout>
