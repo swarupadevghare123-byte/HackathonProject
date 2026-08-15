@@ -32,7 +32,7 @@
         <activity
             android:name=".RegistrationActivity"
             android:exported="false" />
-        <activity android:name=".LabTestsActivity" android:exported="false" />
+
         <!-- Home Activity -->
         <activity
             android:name=".HomeActivity"
