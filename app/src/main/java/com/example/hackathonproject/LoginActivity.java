@@ -32,7 +32,7 @@ public class LoginActivity extends AppCompatActivity {
             });
         }
 
-        // Apply entrance animation
+
         LinearLayout mainLayout = findViewById(R.id.mainContentLayout);
         if (mainLayout != null) {
             Animation slideUp = AnimationUtils.loadAnimation(this, R.anim.slide_up);
@@ -41,12 +41,9 @@ public class LoginActivity extends AppCompatActivity {
 
         TextView tvSignUp = findViewById(R.id.tvSignUp);
         if (tvSignUp != null) {
-            tvSignUp.setOnClickListener(v -> startActivity(new Intent(LoginActivity.this, RegistrationActivity.class)));
-        }
-
-        TextView tvForgotPassword = findViewById(R.id.tvForgotPassword);
-        if (tvForgotPassword != null) {
-            tvForgotPassword.setOnClickListener(v -> startActivity(new Intent(LoginActivity.this, ForgotPasswordActivity.class)));
+            tvSignUp.setOnClickListener(v -> {
+                startActivity(new Intent(LoginActivity.this, RegistrationActivity.class));
+            });
         }
 
         Button btnLogin = findViewById(R.id.btnLogin);
