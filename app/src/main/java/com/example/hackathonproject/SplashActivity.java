@@ -18,6 +18,7 @@ public class SplashActivity extends AppCompatActivity {
     private ImageView outerRing;
     private ImageView innerRing;
     private ImageView logo;
+    private int i;
 
     private TextView appName;
     private TextView subtitle;

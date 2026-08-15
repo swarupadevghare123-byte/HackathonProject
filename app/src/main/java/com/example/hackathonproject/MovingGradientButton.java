@@ -18,6 +18,7 @@ public class MovingGradientButton extends AppCompatButton {
 
     private Paint paint;
     private LinearGradient shader;
+    private int i;
     private Matrix matrix;
     private float translate = 0f;
 
