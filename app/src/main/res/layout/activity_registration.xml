@@ -80,6 +80,7 @@
                         android:layout_marginTop="16dp"
                         android:background="@drawable/edittext_bg"
                         android:hint="@string/full_name"
+                        android:textColor="@color/black"
                         android:importantForAutofill="no"
                         android:inputType="textPersonName"
                         android:padding="16dp" />
@@ -91,6 +92,8 @@
                         android:layout_marginTop="12dp"
                         android:background="@drawable/edittext_bg"
                         android:hint="@string/phone_number"
+                        android:textColor="@color/black"
+
                         android:importantForAutofill="no"
                         android:inputType="phone"
                         android:padding="16dp" />
@@ -102,6 +105,8 @@
                         android:layout_marginTop="12dp"
                         android:background="@drawable/edittext_bg"
                         android:hint="@string/email_address"
+                        android:textColor="@color/black"
+
                         android:importantForAutofill="no"
                         android:inputType="textEmailAddress"
                         android:padding="16dp" />
@@ -113,6 +118,8 @@
                         android:layout_marginTop="12dp"
                         android:background="@drawable/edittext_bg"
                         android:hint="@string/username"
+                        android:textColor="@color/black"
+
                         android:importantForAutofill="no"
                         android:inputType="text"
                         android:padding="16dp" />
@@ -131,6 +138,8 @@
                             android:layout_height="wrap_content"
                             android:background="@drawable/edittext_bg"
                             android:hint="@string/password"
+                            android:textColor="@color/black"
+
                             android:importantForAutofill="no"
                             android:inputType="textPassword"
                             android:padding="16dp" />
@@ -150,6 +159,8 @@
                             android:layout_height="wrap_content"
                             android:background="@drawable/edittext_bg"
                             android:hint="@string/confirm_password"
+                            android:textColor="@color/black"
+
                             android:importantForAutofill="no"
                             android:inputType="textPassword"
                             android:padding="16dp" />
