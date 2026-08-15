@@ -23,8 +23,8 @@
 
         android:id="@+id/logoContainer"
 
-        android:layout_width="235dp"
-        android:layout_height="235dp"
+        android:layout_width="236dp"
+        android:layout_height="236dp"
 
         android:layout_gravity="center">
 
