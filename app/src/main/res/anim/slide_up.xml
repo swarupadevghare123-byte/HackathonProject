@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="800"
+    android:fillAfter="true">
+
+    <!-- खालून वर येण्यासाठी Y ଅକ୍ଷ (Axis) चे ॲनिमेशन -->
+    <translate
+        android:fromYDelta="100%p"
+        android:toYDelta="0"
+        android:interpolator="@android:anim/decelerate_interpolator"/>
+
+    <!-- येताना हळूहळू दिसायला लागण्यासाठी (Fade in) -->
+    <alpha
+        android:fromAlpha="0.0"
+        android:toAlpha="1.0"
+        android:interpolator="@android:anim/accelerate_decelerate_interpolator"/>
+</set>
