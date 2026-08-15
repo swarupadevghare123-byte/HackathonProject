@@ -79,7 +79,7 @@
                     android:layout_height="wrap_content"
                     android:text="Login to continue"
                     android:textSize="14sp"
-                    android:textColor="@color/black"/>
+                    android:textColor="#757575"/>
             </LinearLayout>
 
             <!-- Email / Phone Number Field -->
@@ -90,7 +90,6 @@
                 android:hint="Email or Phone Number"
                 android:background="@drawable/edittext_bg"
                 android:paddingStart="16dp"
-                android:textColor="@color/black"
                 android:paddingEnd="16dp"
                 android:textSize="14sp"
                 android:inputType="textEmailAddress"
@@ -103,7 +102,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:hint="Password"
-                android:textColor="@color/black"
                 android:background="@drawable/edittext_bg"
                 android:paddingStart="16dp"
                 android:paddingEnd="16dp"
@@ -123,17 +121,18 @@
                 android:layout_marginBottom="20dp"/>
 
             <!-- Login Button -->
-
-            <com.example.hackathonproject.MovingGradientButton
+            <Button
                 android:id="@+id/btnLogin"
                 android:layout_width="match_parent"
-                android:layout_height="55dp"
-                android:layout_marginTop="20dp"
+                android:layout_height="50dp"
                 android:text="Login"
-                android:textSize="17sp"
-                android:textStyle="bold"
-                android:padding="0dp"
-                android:background="@android:color/transparent" />
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:backgroundTint="#00838F"
+                app:cornerRadius="12dp"
+                android:layout_marginBottom="30dp"/>
+
+            <!-- Don't have an account? Sign Up -->
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -142,16 +141,14 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
                     android:text="Don't have an account? "
-                    android:textColor="@color/black"/>
+                    android:textColor="#757575"/>
 
                 <TextView
                     android:id="@+id/tvSignUp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Sign Up"
-                    android:layout_marginTop="8dp"
                     android:textStyle="bold"
                     android:clickable="true"
                     android:focusable="true"
