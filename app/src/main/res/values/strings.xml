@@ -38,6 +38,22 @@
     <string name="lab_tests">Lab Tests</string>
     <string name="find_doctors">Find Doctors</string>
     <string name="health_tips">Health Tips</string>
+    <string name="my_bookings">My Bookings</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="completed">Completed</string>
+    <string name="cancelled">Cancelled</string>
+    <string name="nearby">Nearby</string>
+    <string name="registered">Registered</string>
+    <string name="past">Past</string>
+    <string name="our_services">Our Services</string>
+    <string name="quality_healthcare">Quality healthcare services for you</string>
+    <string name="my_health">My Health</string>
+    <string name="account">Account</string>
+    <string name="logout">Logout</string>
+    <string name="health_reminders">Health Reminders</string>
+    <string name="never_miss_health">Never miss your health again!</string>
+    <string name="set_reminders_desc">Set reminders for medicines, checkups and more.</string>
+    <string name="todays_reminders">Today\'s Reminders</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

@@ -5,11 +5,11 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class LabTestsActivity extends AppCompatActivity {
+public class EditProfileActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lab_tests);
+        setContentView(R.layout.activity_edit_profile);
 
         ImageView btnBack = findViewById(R.id.btnBack);
         if (btnBack != null) {

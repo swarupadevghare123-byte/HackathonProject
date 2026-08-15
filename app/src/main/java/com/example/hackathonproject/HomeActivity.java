@@ -41,6 +41,14 @@ public class HomeActivity extends AppCompatActivity {
 
                 if (id == R.id.nav_home) {
                     selectedFragment = new HomeFragment();
+                } else if (id == R.id.nav_camps) {
+                    selectedFragment = new CampsFragment();
+                } else if (id == R.id.nav_services) {
+                    selectedFragment = new CheckupServicesFragment();
+                } else if (id == R.id.nav_bookings) {
+                    selectedFragment = new BookingsFragment();
+                } else if (id == R.id.nav_profile) {
+                    selectedFragment = new ProfileFragment();
                 }
 
                 if (selectedFragment != null) {

@@ -6,63 +6,72 @@
     android:background="#F5FAFC"
     android:orientation="vertical">
 
-    <!-- Custom Toolbar -->
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="20dp">
 
-        <ImageView
-            android:id="@+id/btnBack"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_centerVertical="true"
-            android:contentDescription="Back"
-            android:src="@drawable/arrow_back"
-            app:tint="#102A43" />
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="Lab Tests"
+            android:text="My Bookings"
             android:textColor="#102A43"
             android:textSize="20sp"
             android:textStyle="bold" />
     </RelativeLayout>
 
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayoutBookings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:tabIndicatorColor="#149BB5"
+        app:tabSelectedTextColor="#149BB5"
+        app:tabTextColor="#718096">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upcoming" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Completed" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancelled" />
+    </com.google.android.material.tabs.TabLayout>
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scrollbars="none">
+        android:paddingHorizontal="20dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="20dp"
             android:paddingBottom="80dp">
 
-            <include layout="@layout/item_lab_test" />
-
             <include
-                layout="@layout/item_lab_test_2"
+                android:id="@+id/booking1"
+                layout="@layout/item_health_camp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="12dp" />
+                android:layout_marginTop="20dp" />
 
             <include
-                layout="@layout/item_lab_test_3"
+                android:id="@+id/booking2"
+                layout="@layout/item_health_camp_2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="12dp" />
-
-            <include
-                layout="@layout/item_lab_test_4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="12dp" />
+                android:layout_marginTop="16dp" />
 
         </LinearLayout>
     </ScrollView>
+
 </LinearLayout>

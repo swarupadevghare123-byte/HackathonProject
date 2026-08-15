@@ -11,16 +11,16 @@
     <color name="warning_red_light">#FFF1F2</color>
 
     <!-- Professional & Attractive Palette -->
-    <color name="brand_primary">#0891B2</color>
+    <color name="brand_primary">#149BB5</color>
     <color name="brand_secondary">#0E7490</color>
-    <color name="brand_accent">#22D3EE</color>
+    <color name="brand_accent">#C8F3F7</color>
 
-    <color name="surface_main">#F0F9FF</color>
+    <color name="surface_main">#F5FAFC</color>
     <color name="surface_card">#FFFFFF</color>
 
-    <color name="text_main">#1E293B</color>
-    <color name="text_secondary">#64748B</color>
-    <color name="text_muted">#94A3B8</color>
+    <color name="text_main">#102A43</color>
+    <color name="text_secondary">#718096</color>
+    <color name="text_muted">#BCCCDC</color>
 
     <color name="status_success">#10B981</color>
     <color name="status_success_bg">#ECFDF5</color>
