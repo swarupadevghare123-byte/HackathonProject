@@ -12,7 +12,6 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.airbnb.lottie.LottieAnimationView;
-import com.google.android.material.card.MaterialCardView;
 
 public class HomeFragment extends Fragment {
 
@@ -49,15 +48,6 @@ public class HomeFragment extends Fragment {
         if (cardViewCamp != null) {
             cardViewCamp.setOnClickListener(v -> {
                 Intent intent = new Intent(getActivity(), CampDetailsActivity.class);
-                startActivity(intent);
-            });
-        }
-
-        // लॅब टेस्ट्स कार्डवर क्लिक केल्यावर LabTestsActivity उघडण्यासाठी
-        MaterialCardView cardLabTests = view.findViewById(R.id.cardLabTests);
-        if (cardLabTests != null) {
-            cardLabTests.setOnClickListener(v -> {
-                Intent intent = new Intent(getActivity(), LabTestsActivity.class);
                 startActivity(intent);
             });
         }
